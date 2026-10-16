@@ -1,0 +1,12 @@
+/* Only the Home selected-work instance uses parallel rows. */
+.home-parallel .home-project-rows{display:grid;grid-template-columns:1fr;grid-auto-rows:1fr;gap:24px}
+.home-parallel .project-card{display:grid;grid-template-columns:1fr 1fr;min-height:480px}
+.home-parallel .project-info{order:1;padding:35px 38px}
+.home-parallel .project-info h3{font-size:29px;margin-top:15px}
+.home-parallel .project-visual{order:2;align-items:center;padding:38px;min-height:100%}
+.home-parallel .card-shot{width:100%;margin:0}
+.home-parallel .project-card .card-shot .image-button{aspect-ratio:4/3;max-height:none;display:flex;align-items:center;justify-content:center;background:transparent;border-radius:6px}
+.home-parallel .card-shot .image-button>img{width:100%;height:100%;object-fit:contain}
+.home-parallel .project-visual .visual-tag{top:auto;bottom:18px;left:38px}
+@media(max-width:1050px){.home-parallel .project-info{padding:28px}.home-parallel .project-visual{padding:28px}.home-parallel .project-visual .visual-tag{left:28px}.home-parallel .project-info h3{font-size:27px}}
+@media(max-width:760px){.home-parallel .home-project-rows{grid-auto-rows:auto;gap:22px}.home-parallel .project-card{display:flex;flex-direction:column;min-height:0}.home-parallel .project-info{order:0;padding:26px}.home-parallel .project-info h3{font-size:25px;margin-top:12px}.home-parallel .project-visual{order:1;min-height:0;padding:24px 30px 38px}.home-parallel .project-visual .visual-tag{left:30px;bottom:12px;font-size:8px}.home-parallel .card-shot .image-button{max-height:none}}

@@ -1,0 +1,4 @@
+/* Shared Hero actions for Curio and Tarot; reuse the site's existing buttons. */
+.case-header-links.case-product-links{gap:12px;flex-wrap:wrap}
+.case-product-links .button{box-shadow:none}
+.case-product-links .button:hover{transform:none}

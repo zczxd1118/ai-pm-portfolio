@@ -1,0 +1,138 @@
+/* Curio-specific modules reuse the shared case layout and typography. */
+.curio-case .case-section{scroll-margin-top:0}
+.curio-case .curio-section-module{margin-top:30px;min-width:0}
+.curio-case .curio-module-title{margin:38px 0 23px}
+.curio-case .curio-module-title>.eyebrow{font-size:9px;color:#8a929d}
+.curio-case .curio-module-title h3{font-size:23px;line-height:1.65;margin:12px 0}
+.curio-case .curio-module-title p,.curio-case .curio-section-module p{font-size:13px;line-height:2;color:#68717e}
+.curio-case .curio-section-module h4{font-size:16px;line-height:1.7;font-weight:500}
+.curio-case .curio-section-module .screenshot{min-width:0}
+.curio-case .curio-journey{list-style:none;padding:0;margin:0 0 35px;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:17px}
+.curio-case .curio-journey li{position:relative;border-top:1px solid var(--line);padding-top:15px}
+.curio-case .curio-journey .eyebrow{font-size:9px;color:#939ba7}
+.curio-case .curio-journey h4{font-size:13px;margin:12px 0 8px}
+.curio-case .curio-journey p{font-size:11px}
+.curio-case .curio-journey svg{position:absolute;right:-15px;top:48px;color:#a1a8b2}
+.curio-case .curio-subscription{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start;margin-top:35px}
+.curio-case .curio-subscription .curio-module-title{margin-top:15px}
+.curio-case .curio-subscription .screenshot{margin-top:0}
+.curio-case .curio-feature-list{list-style:none;padding:0;margin:20px 0}
+.curio-case .curio-feature-list li{padding:17px 0;border-top:1px solid var(--line);font-size:13px;line-height:2}
+.curio-case .curio-feature-list strong{display:block;font-size:14px;font-weight:500;margin-bottom:5px}
+.curio-case .curio-feature-list span{color:#77808c}
+.curio-case .curio-preference-example{border-block:1px solid var(--line);padding:24px 0;margin:35px 0}
+.curio-case .curio-preference-example .eyebrow{font-size:9px;color:#939ba7}
+.curio-case .curio-preference-example h4{margin:12px 0}
+.curio-case .curio-preference-example .screenshot{max-width:675px;margin:22px 0 0}
+.curio-case .curio-reading-layers{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-bottom:25px}
+.curio-case .curio-reading-layers>div{display:grid;grid-template-columns:22px 1fr;gap:4px 12px;border-top:1px solid var(--line);padding:17px 0}
+.curio-case .curio-reading-layers>div>span{font:10px var(--font-mono);color:#929ba8;margin-top:6px}
+.curio-case .curio-reading-layers h4{font-size:14px}
+.curio-case .curio-reading-layers p{grid-column:2;font-size:12px}
+.curio-case .curio-editorial-note{border-left:2px solid #b9c5e1;padding-left:17px;margin:22px 0;font-size:12px!important;color:#7b8490!important}
+.curio-case .curio-production{padding:25px;background:#f6f7f9;border:1px solid #e5e8ee;border-radius:6px}
+.curio-case .curio-production .curio-module-title{margin:25px 0 20px}
+.curio-case .curio-production .curio-module-title h3{font-size:21px}
+.curio-case .curio-preparation{display:grid;grid-template-columns:1fr 1fr;gap:25px;list-style:none;padding:0;margin:0}
+.curio-case .curio-preparation>li{border-top:1px solid #cfd5de;padding-top:15px}
+.curio-case .curio-preparation .eyebrow,.curio-case .curio-execution .eyebrow,.curio-case .curio-output-routes .eyebrow{font-size:9px}
+.curio-case .curio-preparation h4{margin:12px 0 9px}
+.curio-case .curio-production p{font-size:12px}
+.curio-case .curio-production small{display:block;font-size:10px;line-height:1.9;color:#8b94a2;margin-top:12px}
+.curio-case .curio-shared-prompt{display:flex;align-items:flex-start;gap:12px;margin-top:24px;padding:18px 0;border-block:1px solid #dce1e9;font-size:12px;line-height:2;color:#747e8d}
+.curio-case .curio-shared-prompt svg{margin-top:4px;color:#8a96aa}
+.curio-case .curio-execution{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.curio-case .curio-execution>div{border:1px solid #dbe2f0;background:white;padding:21px}
+.curio-case .curio-execution .eyebrow{color:#5571ac}
+.curio-case .curio-execution h4{font-size:18px;margin:12px 0}
+.curio-case .curio-execution p+p{margin-top:12px}
+.curio-case .curio-shared-result{display:flex;gap:15px;align-items:flex-start;padding:25px 0}
+.curio-case .curio-shared-result>svg{margin-top:3px;color:#8a96aa}
+.curio-case .curio-shared-result .eyebrow{font-size:9px}
+.curio-case .curio-shared-result h4{font-size:18px;margin:10px 0}
+.curio-case .curio-production code{font:11px var(--font-mono);color:#526a9c}
+.curio-case .curio-output-routes{display:grid;grid-template-columns:1fr 1fr;gap:25px;border-top:1px solid #dce1e9;padding-top:23px}
+.curio-case .curio-output-routes h4{margin:11px 0}
+.curio-case .curio-mode-table{max-width:100%;margin:30px 0;overflow-x:auto}
+.curio-case .curio-mode-table table{width:100%;border-collapse:collapse;font-size:12px;line-height:1.9}
+.curio-case .curio-mode-table caption{text-align:left;font-size:15px;margin-bottom:15px}
+.curio-case .curio-mode-table th,.curio-case .curio-mode-table td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-weight:400}
+.curio-case .curio-mode-table thead th{color:#626d80;background:#f2f4f8;font-size:11px}
+.curio-case .curio-mode-table tbody th{width:21%;color:#9097a2}
+.curio-case .curio-mode-table td{width:39.5%;color:#656e7c}
+.curio-case .curio-pause{padding:21px 23px;border-left:2px solid #aeb7c5;background:#f5f6f8}
+.curio-case .curio-pause .eyebrow{font-size:9px;color:#858f9e;margin-bottom:9px}
+.curio-case .curio-pause strong{font-weight:500;color:#424c5c}
+.curio-case .curio-settings{display:grid;grid-template-columns:.95fr 1.05fr;gap:35px;margin:40px 0;align-items:start}
+.curio-case .curio-settings .curio-module-title{margin-top:0}
+.curio-case .curio-settings .screenshot{margin:0}
+.curio-case .curio-settings p+p{margin-top:18px}
+.curio-case .curio-references{display:flex;flex-wrap:wrap;gap:12px 23px;margin-top:23px}
+.curio-case .curio-references a{font-size:11px;color:#677a9d}
+.curio-case .curio-prompt-flow{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.curio-case .curio-prompt-flow li{border-top:1px solid var(--line);padding-top:17px}
+.curio-case .curio-prompt-flow h4{font-size:15px;margin-bottom:11px}
+.curio-case .curio-prompt-flow p{font-size:12px}
+.curio-case .curio-stars{display:flex;flex-wrap:wrap;gap:15px 24px;margin:28px 0;font-size:12px;color:#7a8493}
+.curio-case .curio-stars b{font-weight:500;color:#48669e;margin-right:7px;letter-spacing:1px}
+.curio-case .curio-result-fields{margin:25px 0;display:grid;grid-template-columns:1fr 1fr;column-gap:30px}
+.curio-case .curio-result-fields>div{border-top:1px solid var(--line);padding:15px 0}
+.curio-case .curio-result-fields dt{font:11px var(--font-mono);color:#637ba8;margin-bottom:9px}
+.curio-case .curio-result-fields dd{margin:0;font-size:12px;line-height:1.9;color:#7d8693}
+.curio-case .curio-mail-assembly{margin-top:35px}
+.curio-case .curio-mail-assembly ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin:0 0 23px}
+.curio-case .curio-mail-assembly li{border-top:1px solid var(--line);padding-top:16px}
+.curio-case .curio-mail-assembly h4{margin-bottom:10px}
+.curio-case .curio-decisions{margin-top:30px}
+.curio-case .curio-decisions>div{border-top:1px solid var(--line);padding:27px 0}
+.curio-case .curio-decisions .eyebrow{font-size:9px;color:#8994a6}
+.curio-case .curio-decisions h3{font-size:22px;line-height:1.7;margin:12px 0}
+.curio-case .curio-decisions p{font-size:13px;line-height:2;color:#697380;max-width:760px}
+.curio-case .curio-decision-tradeoff{margin-top:14px;color:#8a929d!important;font-size:12px!important}
+.curio-case .curio-decision-tradeoff strong{font-weight:500;color:#656f7f;margin-right:15px}
+.curio-case .curio-decisions .text-link{font-size:12px;margin-top:15px}
+.curio-case .curio-delivery-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}
+.curio-case .curio-delivery-summary>a{border-top:1px solid var(--line);padding:18px 0}
+.curio-case .curio-delivery-summary .eyebrow{font-size:9px;color:#8994a6}
+.curio-case .curio-delivery-summary h4{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0}
+.curio-case .curio-delivery-summary h4>svg{color:#8596b5}
+.curio-case .curio-email-preview{scroll-margin-top:20px;min-width:0}
+.curio-case .curio-delivery-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin-top:25px}
+.curio-case .curio-delivery-values>div{border-top:1px solid var(--line);padding-top:17px}
+.curio-case .curio-delivery-values h4{margin-bottom:10px}
+@media(max-width:1100px){
+ .curio-case .curio-journey{grid-template-columns:1fr;gap:13px}
+ .curio-case .curio-journey li{display:grid;grid-template-columns:23px 110px 1fr;gap:15px;align-items:start;padding-top:13px}
+ .curio-case .curio-journey .eyebrow{margin-top:3px}
+ .curio-case .curio-journey h4{margin:0}
+ .curio-case .curio-journey p{font-size:12px}
+ .curio-case .curio-journey svg{display:none}
+ .curio-case .curio-subscription,.curio-case .curio-settings{gap:23px}
+ .curio-case .curio-production{padding:20px}
+ .curio-case .curio-prompt-flow{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+ .curio-case .curio-module-title{margin:28px 0 20px}
+ .curio-case .curio-module-title h3{font-size:21px}
+ .curio-case .curio-journey li{grid-template-columns:23px 1fr;gap:5px 13px}
+ .curio-case .curio-journey p{grid-column:2}
+ .curio-case .curio-subscription,.curio-case .curio-settings{grid-template-columns:1fr;gap:20px}
+ .curio-case .curio-subscription .screenshot{max-width:440px}
+ .curio-case .curio-preference-example h4{font-size:16px}
+ .curio-case .curio-reading-layers{grid-template-columns:1fr;gap:0}
+ .curio-case .curio-production{padding:18px;margin-inline:0}
+ .curio-case .curio-production .workflow-heading{display:block}
+ .curio-case .curio-production .flow-legend{margin-top:8px;display:flex}
+ .curio-case .curio-preparation,.curio-case .curio-execution,.curio-case .curio-output-routes{grid-template-columns:1fr;gap:20px}
+ .curio-case .curio-preparation h4{font-size:16px}
+ .curio-case .curio-execution>div{padding:17px}
+ .curio-case .curio-mode-table th,.curio-case .curio-mode-table td{padding:12px 8px;font-size:11px}
+ .curio-case .curio-mode-table tbody th{width:24%}
+ .curio-case .curio-mode-table td{width:38%}
+ .curio-case .curio-pause{padding:18px}
+ .curio-case .curio-settings .screenshot{max-width:440px}
+ .curio-case .curio-prompt-flow,.curio-case .curio-result-fields{grid-template-columns:1fr}
+ .curio-case .curio-mail-assembly ol{grid-template-columns:1fr;gap:18px}
+ .curio-case .curio-decisions h3{font-size:20px}
+ .curio-case .curio-delivery-summary,.curio-case .curio-delivery-values{grid-template-columns:1fr;gap:18px}
+}
