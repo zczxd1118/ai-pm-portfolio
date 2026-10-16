@@ -20,6 +20,7 @@ out/
 Thumbs.db
 *.log
 *.epub
+!/public/downloads/content-catcher-deep-book.epub
 *.pdf
 *.pem
 *.key

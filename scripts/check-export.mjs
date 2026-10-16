@@ -7,7 +7,9 @@ const prefix=JSON.parse(fs.readFileSync(path.join(root,'site-config.json'),'utf8
 const routes=['','projects','projects/curio','projects/content-catcher','projects/tarot','about','resume'];
 const walk=p=>fs.readdirSync(p,{withFileTypes:true}).flatMap(d=>d.isDirectory()?walk(path.join(p,d.name)):[path.join(p,d.name)]);
 const files=walk(root);
-assert(!files.some(p=>/\.(?:epub|pdf|pem|key)$/i.test(p)||/(?:audit-sources|audit-support|extracted-private|asset-manifest|\.env)/i.test(path.relative(root,p))),'Private input included in export');
+const book=path.join(root,'downloads/content-catcher-deep-book.epub');
+assert(!files.some(p=>(/\.(?:epub|pdf|pem|key)$/i.test(p)&&p!==book)||/(?:audit-sources|audit-support|extracted-private|asset-manifest|\.env)/i.test(path.relative(root,p))),'Private input included in export');
+assert(fs.existsSync(book),'Complete EPUB missing');
 let references=0;
 for(const route of routes){
  const html=fs.readFileSync(path.join(root,route,'index.html'),'utf8');
@@ -19,7 +21,7 @@ for(const route of routes){
   const resolved=path.join(root,name);
   assert(fs.existsSync(resolved),`Missing exported target: ${url}`);references++;
  }
- assert(!html.includes('下载 EPUB'),'Unapproved public EPUB download');
+ assert(html.includes('下载完整 EPUB')===(route==='projects/content-catcher'),'EPUB entry on wrong page');
 }
 assert(fs.existsSync(path.join(root,'404.html'))&&fs.existsSync(path.join(root,'.nojekyll')));
-console.log(`Static export checked: ${routes.length} pages, ${references} local references, basePath=${prefix||'/'}. No full EPUB or private document included.`);
+console.log(`Static export checked: ${routes.length} pages, ${references} local references, basePath=${prefix||'/'}. Only the requested complete EPUB is included; no private documents.`);
