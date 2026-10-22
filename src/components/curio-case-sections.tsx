@@ -5,7 +5,10 @@ import './curio-case-sections.css';
 const repo='https://github.com/zczxd1118/curio-app';
 const version=`${repo}/blob/6cc4e080658133db8ade788b12ae2bddfc90e7c4`;
 const mailDate='真实日报 · 2026-08-28';
-function Reference({path,children}:{path:string;children:React.ReactNode}){return <a className="text-link" href={`${version}/${path}`} target="_blank" rel="noopener noreferrer">{children}<ArrowUpRight size={14}/></a>}
+function Reference({path,children}:{path:string;children:React.ReactNode}){
+ const base=path==='prompts/unified_radar.md'?`${repo}/blob/main`:version;
+ return <a className="text-link" href={`${base}/${path}`} target="_blank" rel="noopener noreferrer">{children}<ArrowUpRight size={14}/></a>
+}
 function ModuleTitle({label,title,children}:{label:string;title:string;children?:React.ReactNode}){return <header className="curio-module-title"><span className="eyebrow">{label}</span><h3>{title}</h3>{children&&<p>{children}</p>}</header>}
 
 function ReaderExperience(){

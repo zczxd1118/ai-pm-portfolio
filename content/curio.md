@@ -96,7 +96,7 @@ Curio 让我持续思考：**怎样让推荐更贴合不同读者的关注重点
 这个项目让我把信息来源、AI 筛选和编辑、网页阅读与邮件订阅组织成一套内容产品。每个环节都围绕同一个目标：帮助读者把有限的注意力投入真正值得阅读的内容。
 
 [C1]: https://github.com/zczxd1118/curio-app/blob/6cc4e080658133db8ade788b12ae2bddfc90e7c4/PRD.md#L16
-[C10]: https://github.com/zczxd1118/curio-app/blob/6cc4e080658133db8ade788b12ae2bddfc90e7c4/prompts/unified_radar.md
+[C10]: https://github.com/zczxd1118/curio-app/blob/main/prompts/unified_radar.md
 [S2]: https://github.com/zczxd1118/curio-site/blob/f8f164a9e721d4732aff4528836f233634133891/app.js#L4
 [C6]: https://github.com/zczxd1118/curio-app/blob/6cc4e080658133db8ade788b12ae2bddfc90e7c4/worker/src/index.js#L117
 [C3]: https://github.com/zczxd1118/curio-app/blob/6cc4e080658133db8ade788b12ae2bddfc90e7c4/cli_generate.py#L444
